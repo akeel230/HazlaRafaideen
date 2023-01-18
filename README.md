@@ -15,7 +15,7 @@ Here are some ideas to get you started:
 - ⚡ Fun fact: ...
 -->
 
-[!MasterHead]https://gifimage.net/wp-content/uploads/2018/11/gif-banner-for-website-5.gif"
+[![MasterHead]https://gifimage.net/wp-content/uploads/2018/11/gif-banner-for-website-5.gif
 <h1 align="center">Hi 👋, I'm Hazla Rafaideen</h1>
 <h3 align="center">I'm a Software Engineering Undergraduate</h3>
 
@@ -51,4 +51,3 @@ Here are some ideas to get you started:
 <p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=hazlarafaideen&show_icons=true&locale=en" alt="hazlarafaideen" /></p>
 
 <p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=hazlarafaideen&" alt="hazlarafaideen" /></p>
-
