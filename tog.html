@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TOG Gallery</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            padding: 10px;
+            justify-content: center;
+        }
+        .gallery-item {
+            position: relative;
+            width: calc(33.333% - 20px);
+            margin-bottom: 10px;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: opacity 0.3s ease;
+        }
+        .gallery-item:hover {
+            transform: scale(1.05);
+        }
+        .gallery-item:hover img {
+            opacity: 0.8;
+        }
+        @media (max-width: 768px) {
+            .gallery-item {
+                width: calc(50% - 20px);
+            }
+        }
+        @media (max-width: 480px) {
+            .gallery-item {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <nav id="desktop-nav">
+        <div class="logo">John Doe</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Hazla Rafaideen</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Gallery -->
+    <section id="gallery">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Image Gallery</h1>
+        <div class="gallery">
+            <!-- Add your images here -->
+            <div class="gallery-item">
+                <img src="/HazlaRafaideen/assets/about pic.jpg" alt="Image 1">
+            </div>
+            <div class="gallery-item">
+                <img src="/HazlaRafaideen/assets/education.png" alt="Image 2">
+            </div>
+            <div class="gallery-item">
+                <img src="https://via.placeholder.com/600x400" alt="Image 3">
+            </div>
+            <div class="gallery-item">
+                <img src="https://via.placeholder.com/600x400" alt="Image 4">
+            </div>
+            <div class="gallery-item">
+                <img src="https://via.placeholder.com/600x400" alt="Image 5">
+            </div>
+            <div class="gallery-item">
+                <img src="https://via.placeholder.com/600x400" alt="Image 6">
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2024 Hz .</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
